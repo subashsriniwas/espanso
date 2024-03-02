@@ -1,0 +1,101 @@
+# espanso match file
+
+# For a complete introduction, visit the official docs at: https://espanso.org/docs/
+
+# You can use this file to define the base matches (aka snippets)
+# that will be available in every application when using espanso.
+
+# Matches are substitution rules: when you type the "trigger" string
+# it gets replaced by the "replace" string.
+
+matches:
+#Personal Data
+  - trigger: ";mail"
+    replace: "smsubash234@gmail.com"
+
+  - trigger: ";num"
+    replace: "9600970072"
+
+  - trigger: ";name"
+    replace: "Subash Sriniwas M"
+
+  - trigger: ";fn"
+    replace: "Subash"
+
+  - trigger: ";ln"
+    replace: "Sriniwas"
+
+  - trigger: ";pan"
+    replace: "NSYPS8311F"
+
+  - trigger: ";adhaar"
+    replace: "427299638241"
+
+  - trigger: ";clg"
+    replace: "Holycross Eanngineering College"
+    
+  - trigger: ";link"
+    replace: "https://www.linkedin.com/in/subash-sriniwas/"
+
+  - trigger: ";git"
+    replace: "https://github.com/subashsriniwas"
+
+  - trigger: ";insta"
+    replace: "https://www.instagram.com/thiz_iz_subazz/"
+
+  - trigger: ";leet"
+    replace: "https://leetcode.com/Subash_Sriniwas/"
+
+  - trigger: ";port"
+    replace: "https://subashsriniwas.github.io/portfolio/"
+
+  - trigger: ";web"
+    replace: "https://subash-sriniwas.web.app"
+
+  - trigger: ";address"
+    replace: "36/3, Panneer selvam street, Sivathaiyapuram, Thoothukudi dist, Tamilnadu - 628251."
+
+  - trigger: ";up"
+    replace: "Updated Succesfully."
+
+  - trigger: ";in"
+    replace: "initial commit."
+
+#PHRASES
+
+  - trigger: ";gm"
+    replace: "Good morning"
+
+  - trigger: ";greet"
+    replace: "Good morning, Have a nice day"
+
+  - trigger: ";gn"
+    replace: "Good night"
+  
+  - trigger: ";nice"
+    replace: "Have a nice day"
+
+
+  # NOTE: espanso uses YAML to define matches, so pay attention to the indentation!
+
+  # But matches can also be dynamic:
+
+  # Print the current date
+  - trigger: ";date"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%m/%d/%Y"
+
+  # Print the output of a shell command
+  - trigger: ";shell"
+    replace: "{{output}}"
+    vars:
+      - name: output
+        type: shell
+        params:
+          cmd: "echo 'Hello from your shell'"
+
+  # And much more! For more information, visit the docs: https://espanso.org/docs/
