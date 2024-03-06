@@ -32,7 +32,7 @@ matches:
     replace: "427299638241"
 
   - trigger: ";clg"
-    replace: "Holycross Eanngineering College"
+    replace: "Holycross Engineering College"
     
   - trigger: ";link"
     replace: "https://www.linkedin.com/in/subash-sriniwas/"
